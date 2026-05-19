@@ -1,0 +1,27 @@
+# --- Keil 编译生成的中间文件和输出文件 ---
+*.o
+*.d
+*.crf
+*.elf
+*.hex
+*.bin
+*.axf
+*.lnp
+*.sct
+*.map
+*.htm
+*.build_log.htm
+*.dep
+
+# --- Keil 的工程缓存和用户配置文件 ---
+*.uvguix.*
+*.uvoptx
+*.bak
+*.scvd
+DebugConfig/
+Listings/
+Objects/
+
+# --- 操作系统产生的垃圾文件 ---
+.DS_Store
+Thumbs.db
