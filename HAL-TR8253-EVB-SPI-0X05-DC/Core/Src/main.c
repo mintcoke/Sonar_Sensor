@@ -29,7 +29,7 @@
 #include "applInterface.h"
 #include "TR8253Evb.h"
 #include "Application.h"
-#include "ecat_pdo_config.h"
+#include "ecat_api.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

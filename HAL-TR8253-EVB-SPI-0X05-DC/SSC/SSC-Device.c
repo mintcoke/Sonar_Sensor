@@ -22,7 +22,7 @@
 ------
 -----------------------------------------------------------------------------------------*/
 #include "ecat_def.h"
-#include "ecat_pdo_config.h"
+/* PDO sizes now auto-calculated from object dictionary */
 
 #include "applInterface.h"
 
@@ -184,9 +184,79 @@ UINT16 APPL_StopOutputHandler(void)
 *////////////////////////////////////////////////////////////////////////////////////////
 UINT16 APPL_GenerateMapping(UINT16 *pInputSize,UINT16 *pOutputSize)
 {
-    *pInputSize  = ECAT_PDO_TOTAL_BYTES;
-    *pOutputSize = ECAT_PDO_TOTAL_BYTES;
-    return ALSTATUSCODE_NOERROR;
+    UINT16 result = ALSTATUSCODE_NOERROR;
+    UINT16 InputSize = 0;
+    UINT16 OutputSize = 0;
+
+#if COE_SUPPORTED
+    UINT16 PDOAssignEntryCnt = 0;
+    OBJCONST TOBJECT OBJMEM * pPDO = NULL;
+    UINT16 PDOSubindex0 = 0;
+    UINT32 *pPDOEntry = NULL;
+    UINT16 PDOEntryCnt = 0;
+
+#if MAX_PD_OUTPUT_SIZE > 0
+    /* Scan object 0x1C12 RXPDO assign */
+    for(PDOAssignEntryCnt = 0; PDOAssignEntryCnt < sRxPDOassign.u16SubIndex0; PDOAssignEntryCnt++)
+    {
+        pPDO = OBJ_GetObjectHandle(sRxPDOassign.aEntries[PDOAssignEntryCnt]);
+        if(pPDO != NULL)
+        {
+            PDOSubindex0 = *((UINT16 *)pPDO->pVarPtr);
+            for(PDOEntryCnt = 0; PDOEntryCnt < PDOSubindex0; PDOEntryCnt++)
+            {
+                pPDOEntry = (UINT32 *)(((UINT16 *)pPDO->pVarPtr) + (OBJ_GetEntryOffset((PDOEntryCnt+1),pPDO)>>4));
+                OutputSize += (UINT16) ((*pPDOEntry) & 0xFF);
+            }
+        }
+        else
+        {
+            OutputSize = 0;
+            result = ALSTATUSCODE_INVALIDOUTPUTMAPPING;
+            break;
+        }
+    }
+    OutputSize = (OutputSize + 7) >> 3;
+#endif
+
+#if MAX_PD_INPUT_SIZE > 0
+    if(result == 0)
+    {
+        /* Scan Object 0x1C13 TXPDO assign */
+        for(PDOAssignEntryCnt = 0; PDOAssignEntryCnt < sTxPDOassign.u16SubIndex0; PDOAssignEntryCnt++)
+        {
+            pPDO = OBJ_GetObjectHandle(sTxPDOassign.aEntries[PDOAssignEntryCnt]);
+            if(pPDO != NULL)
+            {
+                PDOSubindex0 = *((UINT16 *)pPDO->pVarPtr);
+                for(PDOEntryCnt = 0; PDOEntryCnt < PDOSubindex0; PDOEntryCnt++)
+                {
+                    pPDOEntry = (UINT32 *)(((UINT16 *)pPDO->pVarPtr) + (OBJ_GetEntryOffset((PDOEntryCnt+1),pPDO)>>4));
+                    InputSize += (UINT16) ((*pPDOEntry) & 0xFF);
+                }
+            }
+            else
+            {
+                InputSize = 0;
+                result = ALSTATUSCODE_INVALIDINPUTMAPPING;
+                break;
+            }
+        }
+    }
+    InputSize = (InputSize + 7) >> 3;
+#endif
+
+#else
+#if _WIN32
+   #pragma message ("Warning: Define 'InputSize' and 'OutputSize'.")
+#else
+    #warning "Define 'InputSize' and 'OutputSize'."
+#endif
+#endif
+
+    *pInputSize = InputSize;
+    *pOutputSize = OutputSize;
+    return result;
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////

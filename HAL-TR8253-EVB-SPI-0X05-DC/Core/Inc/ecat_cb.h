@@ -16,4 +16,8 @@ extern void (*g_pfnSafeOutput)(void);
 extern void (*g_pfnTxPdoMapping)(UINT16* pData);
 extern void (*g_pfnRxPdoMapping)(UINT16* pData);
 
+/* PDO 映射函数 — 由 ecat_api.c 提供 */
+void APPL_CoeTxPdoMapping(UINT16* pData);
+void APPL_CoeRxPdoMapping(UINT16* pData);
+
 #endif

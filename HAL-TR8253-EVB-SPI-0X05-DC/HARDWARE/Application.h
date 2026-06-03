@@ -1,10 +1,9 @@
 #ifndef Application_H
 #define Application_H
+#include "ecat_api.h"     // PDO 统一接口 DI()/DO() + 栈 API
 #include "sys.h"
 
-#include <stdio.h>
-
-//LED GPIO
+/* ── LED GPIO (硬件相关) ── */
 #define DOCH0    PDout(14)
 #define DOCH1    PDout(15)
 #define DOCH2    PDout(0)
@@ -31,24 +30,7 @@
 #define DICH6()   PBin(8)
 #define DICH7()   PBin(9)
 
-void GPIO_HW_Init(void);
-
 void DO_LED_Ctrl(void);
 void DO_LED_Off(void);
-void APPL_CoeRxPdoMapping(uint16_t* pData);
-void APPL_CoeTxPdoMapping(uint16_t* pData);
 
-
-
-
-#endif 
-
-
-
-
-
-
-
-
-
-
+#endif

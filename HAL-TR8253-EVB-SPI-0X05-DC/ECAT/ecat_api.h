@@ -2,57 +2,53 @@
 #define _ECAT_API_H_
 
 #include <stdint.h>
-#include <string.h>
-#include "ecat_def.h"
-#include "ecatappl.h"
-#include "coeappl.h"
-#include "ecat_cb.h"
-#include "SSC-DeviceObjects.h"
-#include "ecat_pdo_types.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-#ifndef ECAT_PD_IN_MAX
-#define ECAT_PD_IN_MAX    0x400
-#endif
+/* ═══════════════════════════════════════════════════════════════
+ *  EtherCAT 从站库 — 单头文件接口
+ *  改 PDO 大小只改 PDO_TX/RX_UINT16，其他自动适配
+ * ═══════════════════════════════════════════════════════════════ */
 
-#ifndef ECAT_PD_OUT_MAX
-#define ECAT_PD_OUT_MAX   0x400
-#endif
+/* ── PDO 大小 (按需修改) ── */
+#define PDO_TX_UINT16   510
+#define PDO_RX_UINT16   510
 
-#ifndef MAX_PD_INPUT_SIZE
-#define MAX_PD_INPUT_SIZE   ECAT_PD_IN_MAX
-#endif
+/* ── PDO 上限 (不必改) ── */
+#define PDO_TX_MAX      0x400
+#define PDO_RX_MAX      0x400
 
-#ifndef MAX_PD_OUTPUT_SIZE
-#define MAX_PD_OUTPUT_SIZE  ECAT_PD_OUT_MAX
-#endif
+/* ── 自动计算 ── */
+#define PDO_TX_BYTES    ((PDO_TX_UINT16) * 2U)
+#define PDO_RX_BYTES    ((PDO_RX_UINT16) * 2U)
 
-typedef struct {
-    struct TxData tx;
-} ECAT_Input_t;
+/* ═══════════════════════════════════════════════════════════════
+ *  统一 PDO 访问 — DI(n) / DO(n)
+ *  2 个 ARRAY × 255 UINT16 拼接成连续 0~509 逻辑索引
+ * ═══════════════════════════════════════════════════════════════ */
+#define _DI_BASE  ((uint16_t*)(&DIUnit10x6000.u16SubIndex0 + 1))
+#define _DO_BASE  ((uint16_t*)(&DOUnit20x7000.u16SubIndex0 + 1))
+#define DI(n)     (_DI_BASE[(n)])
+#define DO(n)     (_DO_BASE[(n)])
 
-typedef struct {
-    struct RxData rx;
-} ECAT_Output_t;
+/* ═══════════════════════════════════════════════════════════════
+ *  PDO 变量命名 — 在这里给每个偏移起名字
+ * ═══════════════════════════════════════════════════════════════ */
 
-extern ECAT_Input_t g_EcatInput;
-extern ECAT_Output_t g_EcatOutput;
+/* ── TxPDO (设备→PLC) ── */
+#define T_STATE      0
+#define T_ALARM      1
+#define T_VERSION    2
 
-#define ECAT_INPUT   (g_EcatInput)
-#define ECAT_OUTPUT  (g_EcatOutput)
+/* ── RxPDO (PLC→设备) ── */
+#define R_CTRL       0
+#define R_SPEED      1
 
-void ECAT_Stack_Init(void);
-void ECAT_Stack_MainLoop(void);
-
-typedef void (*ecat_periodic_cb_t)(void);
-void ECAT_RegisterPeriodicTask(ecat_periodic_cb_t cb);
-
-typedef void (*ecat_safe_output_cb_t)(void);
-void ECAT_RegisterSafeOutput(ecat_safe_output_cb_t cb);
-
+/* ═══════════════════════════════════════════════════════════════
+ *  持久化参数
+ * ═══════════════════════════════════════════════════════════════ */
 typedef struct {
     float    sonar_zero_offset;
     float    sonar_scale_factor;
@@ -64,19 +60,24 @@ typedef struct {
 
 extern PersistentParams_t g_PersistentParams;
 
+/* ═══════════════════════════════════════════════════════════════
+ *  API
+ * ═══════════════════════════════════════════════════════════════ */
+void ECAT_Stack_Init(void);
+void ECAT_Stack_MainLoop(void);
+
+typedef void (*ecat_periodic_cb_t)(void);
+void ECAT_RegisterPeriodicTask(ecat_periodic_cb_t cb);
+
+typedef void (*ecat_safe_output_cb_t)(void);
+void ECAT_RegisterSafeOutput(ecat_safe_output_cb_t cb);
+
 uint32_t ECAT_GetParamSize(void);
 void*    ECAT_GetParamPtr(void);
 void     ECAT_SetParamDirty(void);
 
-#define ECAT_WD_TIMEOUT_MS  100
-
 uint8_t ECAT_IsOpRunning(void);
 uint8_t ECAT_GetAlState(void);
-
-extern CHAR        acDevicename[];
-extern CHAR        acHardwareversion[];
-extern CHAR        acSoftwareversion[];
-extern TOBJ1018    sIdentity;
 
 #ifdef __cplusplus
 }
