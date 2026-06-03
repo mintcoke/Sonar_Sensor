@@ -10,7 +10,7 @@
 
 /**
 \file SSC-DeviceObjects
-\author ET9300Utilities.ApplicationHandler (Version 1.5.0.0) | EthercatSSC@beckhoff.com
+\author ET9300Utilities.ApplicationHandler (Version 1.6.3.0) | EthercatSSC@beckhoff.com
 
 \brief SSC-Device specific objects<br>
 \brief NOTE : This file will be overwritten if a new object dictionary is generated!<br>
@@ -50,25 +50,249 @@
 * SubIndex 14<br>
 * SubIndex 15<br>
 * SubIndex 16<br>
+* SubIndex 17<br>
+* SubIndex 18<br>
+* SubIndex 19<br>
+* SubIndex 20<br>
+* SubIndex 21<br>
+* SubIndex 22<br>
+* SubIndex 23<br>
+* SubIndex 24<br>
+* SubIndex 25<br>
+* SubIndex 26<br>
+* SubIndex 27<br>
+* SubIndex 28<br>
+* SubIndex 29<br>
+* SubIndex 30<br>
+* SubIndex 31<br>
+* SubIndex 32<br>
+* SubIndex 33<br>
+* SubIndex 34<br>
+* SubIndex 35<br>
+* SubIndex 36<br>
+* SubIndex 37<br>
+* SubIndex 38<br>
+* SubIndex 39<br>
+* SubIndex 40<br>
+* SubIndex 41<br>
+* SubIndex 42<br>
+* SubIndex 43<br>
+* SubIndex 44<br>
+* SubIndex 45<br>
+* SubIndex 46<br>
+* SubIndex 47<br>
+* SubIndex 48<br>
+* SubIndex 49<br>
+* SubIndex 50<br>
+* SubIndex 51<br>
+* SubIndex 52<br>
+* SubIndex 53<br>
+* SubIndex 54<br>
+* SubIndex 55<br>
+* SubIndex 56<br>
+* SubIndex 57<br>
+* SubIndex 58<br>
+* SubIndex 59<br>
+* SubIndex 60<br>
+* SubIndex 61<br>
+* SubIndex 62<br>
+* SubIndex 63<br>
+* SubIndex 64<br>
+* SubIndex 65<br>
+* SubIndex 66<br>
+* SubIndex 67<br>
+* SubIndex 68<br>
+* SubIndex 69<br>
+* SubIndex 70<br>
+* SubIndex 71<br>
+* SubIndex 72<br>
+* SubIndex 73<br>
+* SubIndex 74<br>
+* SubIndex 75<br>
+* SubIndex 76<br>
+* SubIndex 77<br>
+* SubIndex 78<br>
+* SubIndex 79<br>
+* SubIndex 80<br>
+* SubIndex 81<br>
+* SubIndex 82<br>
+* SubIndex 83<br>
+* SubIndex 84<br>
+* SubIndex 85<br>
+* SubIndex 86<br>
+* SubIndex 87<br>
+* SubIndex 88<br>
+* SubIndex 89<br>
+* SubIndex 90<br>
+* SubIndex 91<br>
+* SubIndex 92<br>
+* SubIndex 93<br>
+* SubIndex 94<br>
+* SubIndex 95<br>
+* SubIndex 96<br>
+* SubIndex 97<br>
+* SubIndex 98<br>
+* SubIndex 99<br>
+* SubIndex 100<br>
+* SubIndex 101<br>
+* SubIndex 102<br>
+* SubIndex 103<br>
+* SubIndex 104<br>
+* SubIndex 105<br>
+* SubIndex 106<br>
+* SubIndex 107<br>
+* SubIndex 108<br>
+* SubIndex 109<br>
+* SubIndex 110<br>
+* SubIndex 111<br>
+* SubIndex 112<br>
+* SubIndex 113<br>
+* SubIndex 114<br>
+* SubIndex 115<br>
+* SubIndex 116<br>
+* SubIndex 117<br>
+* SubIndex 118<br>
+* SubIndex 119<br>
+* SubIndex 120<br>
+* SubIndex 121<br>
+* SubIndex 122<br>
+* SubIndex 123<br>
+* SubIndex 124<br>
+* SubIndex 125<br>
+* SubIndex 126<br>
+* SubIndex 127<br>
+* SubIndex 128<br>
 */
 OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0x1600[] = {
 { DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex1 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex2 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex3 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex4 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex5 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex6 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex7 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex8 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex9 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex10 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex11 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex12 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex13 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex14 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex15 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }}; /* Subindex16 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex1 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex2 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex3 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex4 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex5 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex6 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex7 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex8 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex9 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex10 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex11 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex12 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex13 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex14 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex15 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex16 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex17 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex18 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex19 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex20 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex21 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex22 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex23 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex24 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex25 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex26 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex27 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex28 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex29 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex30 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex31 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex32 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex33 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex34 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex35 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex36 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex37 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex38 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex39 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex40 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex41 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex42 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex43 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex44 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex45 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex46 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex47 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex48 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex49 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex50 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex51 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex52 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex53 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex54 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex55 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex56 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex57 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex58 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex59 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex60 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex61 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex62 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex63 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex64 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex65 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex66 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex67 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex68 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex69 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex70 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex71 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex72 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex73 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex74 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex75 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex76 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex77 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex78 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex79 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex80 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex81 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex82 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex83 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex84 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex85 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex86 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex87 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex88 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex89 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex90 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex91 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex92 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex93 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex94 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex95 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex96 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex97 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex98 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex99 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex100 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex101 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex102 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex103 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex104 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex105 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex106 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex107 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex108 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex109 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex110 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex111 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex112 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex113 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex114 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex115 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex116 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex117 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex118 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex119 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex120 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex121 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex122 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex123 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex124 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex125 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex126 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex127 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }}; /* Subindex128 */
 
 /**
 * \brief Object/Entry names
@@ -89,7 +313,119 @@ OBJCONST UCHAR OBJMEM aName0x1600[] = "DO Unit2\000"
 "SubIndex 013\000"
 "SubIndex 014\000"
 "SubIndex 015\000"
-"SubIndex 016\000\377";
+"SubIndex 016\000"
+"SubIndex 017\000"
+"SubIndex 018\000"
+"SubIndex 019\000"
+"SubIndex 020\000"
+"SubIndex 021\000"
+"SubIndex 022\000"
+"SubIndex 023\000"
+"SubIndex 024\000"
+"SubIndex 025\000"
+"SubIndex 026\000"
+"SubIndex 027\000"
+"SubIndex 028\000"
+"SubIndex 029\000"
+"SubIndex 030\000"
+"SubIndex 031\000"
+"SubIndex 032\000"
+"SubIndex 033\000"
+"SubIndex 034\000"
+"SubIndex 035\000"
+"SubIndex 036\000"
+"SubIndex 037\000"
+"SubIndex 038\000"
+"SubIndex 039\000"
+"SubIndex 040\000"
+"SubIndex 041\000"
+"SubIndex 042\000"
+"SubIndex 043\000"
+"SubIndex 044\000"
+"SubIndex 045\000"
+"SubIndex 046\000"
+"SubIndex 047\000"
+"SubIndex 048\000"
+"SubIndex 049\000"
+"SubIndex 050\000"
+"SubIndex 051\000"
+"SubIndex 052\000"
+"SubIndex 053\000"
+"SubIndex 054\000"
+"SubIndex 055\000"
+"SubIndex 056\000"
+"SubIndex 057\000"
+"SubIndex 058\000"
+"SubIndex 059\000"
+"SubIndex 060\000"
+"SubIndex 061\000"
+"SubIndex 062\000"
+"SubIndex 063\000"
+"SubIndex 064\000"
+"SubIndex 065\000"
+"SubIndex 066\000"
+"SubIndex 067\000"
+"SubIndex 068\000"
+"SubIndex 069\000"
+"SubIndex 070\000"
+"SubIndex 071\000"
+"SubIndex 072\000"
+"SubIndex 073\000"
+"SubIndex 074\000"
+"SubIndex 075\000"
+"SubIndex 076\000"
+"SubIndex 077\000"
+"SubIndex 078\000"
+"SubIndex 079\000"
+"SubIndex 080\000"
+"SubIndex 081\000"
+"SubIndex 082\000"
+"SubIndex 083\000"
+"SubIndex 084\000"
+"SubIndex 085\000"
+"SubIndex 086\000"
+"SubIndex 087\000"
+"SubIndex 088\000"
+"SubIndex 089\000"
+"SubIndex 090\000"
+"SubIndex 091\000"
+"SubIndex 092\000"
+"SubIndex 093\000"
+"SubIndex 094\000"
+"SubIndex 095\000"
+"SubIndex 096\000"
+"SubIndex 097\000"
+"SubIndex 098\000"
+"SubIndex 099\000"
+"SubIndex 100\000"
+"SubIndex 101\000"
+"SubIndex 102\000"
+"SubIndex 103\000"
+"SubIndex 104\000"
+"SubIndex 105\000"
+"SubIndex 106\000"
+"SubIndex 107\000"
+"SubIndex 108\000"
+"SubIndex 109\000"
+"SubIndex 110\000"
+"SubIndex 111\000"
+"SubIndex 112\000"
+"SubIndex 113\000"
+"SubIndex 114\000"
+"SubIndex 115\000"
+"SubIndex 116\000"
+"SubIndex 117\000"
+"SubIndex 118\000"
+"SubIndex 119\000"
+"SubIndex 120\000"
+"SubIndex 121\000"
+"SubIndex 122\000"
+"SubIndex 123\000"
+"SubIndex 124\000"
+"SubIndex 125\000"
+"SubIndex 126\000"
+"SubIndex 127\000"
+"SubIndex 128\000\377";
 #endif //#ifdef _OBJD_
 
 #ifndef _SSC_DEVICE_OBJECTS_H_
@@ -98,134 +434,134 @@ OBJCONST UCHAR OBJMEM aName0x1600[] = "DO Unit2\000"
 */
 typedef struct OBJ_STRUCT_PACKED_START {
 UINT16 u16SubIndex0;
-UINT32 SI1;
-UINT32 SI2;
-UINT32 SI3;
-UINT32 SI4;
-UINT32 SI5;
-UINT32 SI6;
-UINT32 SI7;
-UINT32 SI8;
-UINT32 SI9;
-UINT32 SI10;
-UINT32 SI11;
-UINT32 SI12;
-UINT32 SI13;
-UINT32 SI14;
-UINT32 SI15;
-UINT32 SI16;
-UINT32 SI17;
-UINT32 SI18;
-UINT32 SI19;
-UINT32 SI20;
-UINT32 SI21;
-UINT32 SI22;
-UINT32 SI23;
-UINT32 SI24;
-UINT32 SI25;
-UINT32 SI26;
-UINT32 SI27;
-UINT32 SI28;
-UINT32 SI29;
-UINT32 SI30;
-UINT32 SI31;
-UINT32 SI32;
-UINT32 SI33;
-UINT32 SI34;
-UINT32 SI35;
-UINT32 SI36;
-UINT32 SI37;
-UINT32 SI38;
-UINT32 SI39;
-UINT32 SI40;
-UINT32 SI41;
-UINT32 SI42;
-UINT32 SI43;
-UINT32 SI44;
-UINT32 SI45;
-UINT32 SI46;
-UINT32 SI47;
-UINT32 SI48;
-UINT32 SI49;
-UINT32 SI50;
-UINT32 SI51;
-UINT32 SI52;
-UINT32 SI53;
-UINT32 SI54;
-UINT32 SI55;
-UINT32 SI56;
-UINT32 SI57;
-UINT32 SI58;
-UINT32 SI59;
-UINT32 SI60;
-UINT32 SI61;
-UINT32 SI62;
-UINT32 SI63;
-UINT32 SI64;
-UINT32 SI65;
-UINT32 SI66;
-UINT32 SI67;
-UINT32 SI68;
-UINT32 SI69;
-UINT32 SI70;
-UINT32 SI71;
-UINT32 SI72;
-UINT32 SI73;
-UINT32 SI74;
-UINT32 SI75;
-UINT32 SI76;
-UINT32 SI77;
-UINT32 SI78;
-UINT32 SI79;
-UINT32 SI80;
-UINT32 SI81;
-UINT32 SI82;
-UINT32 SI83;
-UINT32 SI84;
-UINT32 SI85;
-UINT32 SI86;
-UINT32 SI87;
-UINT32 SI88;
-UINT32 SI89;
-UINT32 SI90;
-UINT32 SI91;
-UINT32 SI92;
-UINT32 SI93;
-UINT32 SI94;
-UINT32 SI95;
-UINT32 SI96;
-UINT32 SI97;
-UINT32 SI98;
-UINT32 SI99;
-UINT32 SI100;
-UINT32 SI101;
-UINT32 SI102;
-UINT32 SI103;
-UINT32 SI104;
-UINT32 SI105;
-UINT32 SI106;
-UINT32 SI107;
-UINT32 SI108;
-UINT32 SI109;
-UINT32 SI110;
-UINT32 SI111;
-UINT32 SI112;
-UINT32 SI113;
-UINT32 SI114;
-UINT32 SI115;
-UINT32 SI116;
-UINT32 SI117;
-UINT32 SI118;
-UINT32 SI119;
-UINT32 SI120;
-UINT32 SI121;
-UINT32 SI122;
-UINT32 SI123;
-UINT32 SI124;
-UINT32 SI125;
-UINT32 SI126;
-UINT32 SI127;
-UINT32 SI128;
+UINT32 SI1; /* Subindex1 -  */
+UINT32 SI2; /* Subindex2 -  */
+UINT32 SI3; /* Subindex3 -  */
+UINT32 SI4; /* Subindex4 -  */
+UINT32 SI5; /* Subindex5 -  */
+UINT32 SI6; /* Subindex6 -  */
+UINT32 SI7; /* Subindex7 -  */
+UINT32 SI8; /* Subindex8 -  */
+UINT32 SI9; /* Subindex9 -  */
+UINT32 SI10; /* Subindex10 -  */
+UINT32 SI11; /* Subindex11 -  */
+UINT32 SI12; /* Subindex12 -  */
+UINT32 SI13; /* Subindex13 -  */
+UINT32 SI14; /* Subindex14 -  */
+UINT32 SI15; /* Subindex15 -  */
+UINT32 SI16; /* Subindex16 -  */
+UINT32 SI17; /* Subindex17 -  */
+UINT32 SI18; /* Subindex18 -  */
+UINT32 SI19; /* Subindex19 -  */
+UINT32 SI20; /* Subindex20 -  */
+UINT32 SI21; /* Subindex21 -  */
+UINT32 SI22; /* Subindex22 -  */
+UINT32 SI23; /* Subindex23 -  */
+UINT32 SI24; /* Subindex24 -  */
+UINT32 SI25; /* Subindex25 -  */
+UINT32 SI26; /* Subindex26 -  */
+UINT32 SI27; /* Subindex27 -  */
+UINT32 SI28; /* Subindex28 -  */
+UINT32 SI29; /* Subindex29 -  */
+UINT32 SI30; /* Subindex30 -  */
+UINT32 SI31; /* Subindex31 -  */
+UINT32 SI32; /* Subindex32 -  */
+UINT32 SI33; /* Subindex33 -  */
+UINT32 SI34; /* Subindex34 -  */
+UINT32 SI35; /* Subindex35 -  */
+UINT32 SI36; /* Subindex36 -  */
+UINT32 SI37; /* Subindex37 -  */
+UINT32 SI38; /* Subindex38 -  */
+UINT32 SI39; /* Subindex39 -  */
+UINT32 SI40; /* Subindex40 -  */
+UINT32 SI41; /* Subindex41 -  */
+UINT32 SI42; /* Subindex42 -  */
+UINT32 SI43; /* Subindex43 -  */
+UINT32 SI44; /* Subindex44 -  */
+UINT32 SI45; /* Subindex45 -  */
+UINT32 SI46; /* Subindex46 -  */
+UINT32 SI47; /* Subindex47 -  */
+UINT32 SI48; /* Subindex48 -  */
+UINT32 SI49; /* Subindex49 -  */
+UINT32 SI50; /* Subindex50 -  */
+UINT32 SI51; /* Subindex51 -  */
+UINT32 SI52; /* Subindex52 -  */
+UINT32 SI53; /* Subindex53 -  */
+UINT32 SI54; /* Subindex54 -  */
+UINT32 SI55; /* Subindex55 -  */
+UINT32 SI56; /* Subindex56 -  */
+UINT32 SI57; /* Subindex57 -  */
+UINT32 SI58; /* Subindex58 -  */
+UINT32 SI59; /* Subindex59 -  */
+UINT32 SI60; /* Subindex60 -  */
+UINT32 SI61; /* Subindex61 -  */
+UINT32 SI62; /* Subindex62 -  */
+UINT32 SI63; /* Subindex63 -  */
+UINT32 SI64; /* Subindex64 -  */
+UINT32 SI65; /* Subindex65 -  */
+UINT32 SI66; /* Subindex66 -  */
+UINT32 SI67; /* Subindex67 -  */
+UINT32 SI68; /* Subindex68 -  */
+UINT32 SI69; /* Subindex69 -  */
+UINT32 SI70; /* Subindex70 -  */
+UINT32 SI71; /* Subindex71 -  */
+UINT32 SI72; /* Subindex72 -  */
+UINT32 SI73; /* Subindex73 -  */
+UINT32 SI74; /* Subindex74 -  */
+UINT32 SI75; /* Subindex75 -  */
+UINT32 SI76; /* Subindex76 -  */
+UINT32 SI77; /* Subindex77 -  */
+UINT32 SI78; /* Subindex78 -  */
+UINT32 SI79; /* Subindex79 -  */
+UINT32 SI80; /* Subindex80 -  */
+UINT32 SI81; /* Subindex81 -  */
+UINT32 SI82; /* Subindex82 -  */
+UINT32 SI83; /* Subindex83 -  */
+UINT32 SI84; /* Subindex84 -  */
+UINT32 SI85; /* Subindex85 -  */
+UINT32 SI86; /* Subindex86 -  */
+UINT32 SI87; /* Subindex87 -  */
+UINT32 SI88; /* Subindex88 -  */
+UINT32 SI89; /* Subindex89 -  */
+UINT32 SI90; /* Subindex90 -  */
+UINT32 SI91; /* Subindex91 -  */
+UINT32 SI92; /* Subindex92 -  */
+UINT32 SI93; /* Subindex93 -  */
+UINT32 SI94; /* Subindex94 -  */
+UINT32 SI95; /* Subindex95 -  */
+UINT32 SI96; /* Subindex96 -  */
+UINT32 SI97; /* Subindex97 -  */
+UINT32 SI98; /* Subindex98 -  */
+UINT32 SI99; /* Subindex99 -  */
+UINT32 SI100; /* Subindex100 -  */
+UINT32 SI101; /* Subindex101 -  */
+UINT32 SI102; /* Subindex102 -  */
+UINT32 SI103; /* Subindex103 -  */
+UINT32 SI104; /* Subindex104 -  */
+UINT32 SI105; /* Subindex105 -  */
+UINT32 SI106; /* Subindex106 -  */
+UINT32 SI107; /* Subindex107 -  */
+UINT32 SI108; /* Subindex108 -  */
+UINT32 SI109; /* Subindex109 -  */
+UINT32 SI110; /* Subindex110 -  */
+UINT32 SI111; /* Subindex111 -  */
+UINT32 SI112; /* Subindex112 -  */
+UINT32 SI113; /* Subindex113 -  */
+UINT32 SI114; /* Subindex114 -  */
+UINT32 SI115; /* Subindex115 -  */
+UINT32 SI116; /* Subindex116 -  */
+UINT32 SI117; /* Subindex117 -  */
+UINT32 SI118; /* Subindex118 -  */
+UINT32 SI119; /* Subindex119 -  */
+UINT32 SI120; /* Subindex120 -  */
+UINT32 SI121; /* Subindex121 -  */
+UINT32 SI122; /* Subindex122 -  */
+UINT32 SI123; /* Subindex123 -  */
+UINT32 SI124; /* Subindex124 -  */
+UINT32 SI125; /* Subindex125 -  */
+UINT32 SI126; /* Subindex126 -  */
+UINT32 SI127; /* Subindex127 -  */
+UINT32 SI128; /* Subindex128 -  */
 } OBJ_STRUCT_PACKED_END
 TOBJ1600;
 #endif //#ifndef _SSC_DEVICE_OBJECTS_H_
@@ -271,25 +607,249 @@ PROTO TOBJ1600 DOUnit20x1600
 * SubIndex 14<br>
 * SubIndex 15<br>
 * SubIndex 16<br>
+* SubIndex 17<br>
+* SubIndex 18<br>
+* SubIndex 19<br>
+* SubIndex 20<br>
+* SubIndex 21<br>
+* SubIndex 22<br>
+* SubIndex 23<br>
+* SubIndex 24<br>
+* SubIndex 25<br>
+* SubIndex 26<br>
+* SubIndex 27<br>
+* SubIndex 28<br>
+* SubIndex 29<br>
+* SubIndex 30<br>
+* SubIndex 31<br>
+* SubIndex 32<br>
+* SubIndex 33<br>
+* SubIndex 34<br>
+* SubIndex 35<br>
+* SubIndex 36<br>
+* SubIndex 37<br>
+* SubIndex 38<br>
+* SubIndex 39<br>
+* SubIndex 40<br>
+* SubIndex 41<br>
+* SubIndex 42<br>
+* SubIndex 43<br>
+* SubIndex 44<br>
+* SubIndex 45<br>
+* SubIndex 46<br>
+* SubIndex 47<br>
+* SubIndex 48<br>
+* SubIndex 49<br>
+* SubIndex 50<br>
+* SubIndex 51<br>
+* SubIndex 52<br>
+* SubIndex 53<br>
+* SubIndex 54<br>
+* SubIndex 55<br>
+* SubIndex 56<br>
+* SubIndex 57<br>
+* SubIndex 58<br>
+* SubIndex 59<br>
+* SubIndex 60<br>
+* SubIndex 61<br>
+* SubIndex 62<br>
+* SubIndex 63<br>
+* SubIndex 64<br>
+* SubIndex 65<br>
+* SubIndex 66<br>
+* SubIndex 67<br>
+* SubIndex 68<br>
+* SubIndex 69<br>
+* SubIndex 70<br>
+* SubIndex 71<br>
+* SubIndex 72<br>
+* SubIndex 73<br>
+* SubIndex 74<br>
+* SubIndex 75<br>
+* SubIndex 76<br>
+* SubIndex 77<br>
+* SubIndex 78<br>
+* SubIndex 79<br>
+* SubIndex 80<br>
+* SubIndex 81<br>
+* SubIndex 82<br>
+* SubIndex 83<br>
+* SubIndex 84<br>
+* SubIndex 85<br>
+* SubIndex 86<br>
+* SubIndex 87<br>
+* SubIndex 88<br>
+* SubIndex 89<br>
+* SubIndex 90<br>
+* SubIndex 91<br>
+* SubIndex 92<br>
+* SubIndex 93<br>
+* SubIndex 94<br>
+* SubIndex 95<br>
+* SubIndex 96<br>
+* SubIndex 97<br>
+* SubIndex 98<br>
+* SubIndex 99<br>
+* SubIndex 100<br>
+* SubIndex 101<br>
+* SubIndex 102<br>
+* SubIndex 103<br>
+* SubIndex 104<br>
+* SubIndex 105<br>
+* SubIndex 106<br>
+* SubIndex 107<br>
+* SubIndex 108<br>
+* SubIndex 109<br>
+* SubIndex 110<br>
+* SubIndex 111<br>
+* SubIndex 112<br>
+* SubIndex 113<br>
+* SubIndex 114<br>
+* SubIndex 115<br>
+* SubIndex 116<br>
+* SubIndex 117<br>
+* SubIndex 118<br>
+* SubIndex 119<br>
+* SubIndex 120<br>
+* SubIndex 121<br>
+* SubIndex 122<br>
+* SubIndex 123<br>
+* SubIndex 124<br>
+* SubIndex 125<br>
+* SubIndex 126<br>
+* SubIndex 127<br>
+* SubIndex 128<br>
 */
 OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0x1A00[] = {
 { DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex1 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex2 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex3 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex4 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex5 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex6 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex7 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex8 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex9 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex10 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex11 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex12 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex13 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex14 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }, /* Subindex15 */
-{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }}; /* Subindex16 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex1 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex2 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex3 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex4 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex5 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex6 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex7 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex8 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex9 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex10 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex11 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex12 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex13 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex14 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex15 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex16 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex17 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex18 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex19 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex20 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex21 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex22 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex23 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex24 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex25 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex26 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex27 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex28 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex29 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex30 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex31 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex32 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex33 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex34 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex35 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex36 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex37 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex38 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex39 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex40 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex41 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex42 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex43 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex44 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex45 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex46 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex47 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex48 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex49 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex50 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex51 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex52 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex53 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex54 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex55 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex56 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex57 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex58 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex59 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex60 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex61 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex62 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex63 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex64 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex65 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex66 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex67 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex68 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex69 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex70 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex71 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex72 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex73 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex74 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex75 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex76 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex77 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex78 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex79 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex80 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex81 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex82 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex83 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex84 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex85 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex86 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex87 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex88 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex89 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex90 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex91 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex92 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex93 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex94 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex95 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex96 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex97 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex98 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex99 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex100 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex101 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex102 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex103 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex104 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex105 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex106 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex107 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex108 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex109 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex110 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex111 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex112 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex113 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex114 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex115 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex116 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex117 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex118 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex119 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex120 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex121 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex122 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex123 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex124 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex125 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex126 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }, /* Subindex127 */
+{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ }}; /* Subindex128 */
 
 /**
 * \brief Object/Entry names
@@ -310,7 +870,119 @@ OBJCONST UCHAR OBJMEM aName0x1A00[] = "DI Unit1\000"
 "SubIndex 013\000"
 "SubIndex 014\000"
 "SubIndex 015\000"
-"SubIndex 016\000\377";
+"SubIndex 016\000"
+"SubIndex 017\000"
+"SubIndex 018\000"
+"SubIndex 019\000"
+"SubIndex 020\000"
+"SubIndex 021\000"
+"SubIndex 022\000"
+"SubIndex 023\000"
+"SubIndex 024\000"
+"SubIndex 025\000"
+"SubIndex 026\000"
+"SubIndex 027\000"
+"SubIndex 028\000"
+"SubIndex 029\000"
+"SubIndex 030\000"
+"SubIndex 031\000"
+"SubIndex 032\000"
+"SubIndex 033\000"
+"SubIndex 034\000"
+"SubIndex 035\000"
+"SubIndex 036\000"
+"SubIndex 037\000"
+"SubIndex 038\000"
+"SubIndex 039\000"
+"SubIndex 040\000"
+"SubIndex 041\000"
+"SubIndex 042\000"
+"SubIndex 043\000"
+"SubIndex 044\000"
+"SubIndex 045\000"
+"SubIndex 046\000"
+"SubIndex 047\000"
+"SubIndex 048\000"
+"SubIndex 049\000"
+"SubIndex 050\000"
+"SubIndex 051\000"
+"SubIndex 052\000"
+"SubIndex 053\000"
+"SubIndex 054\000"
+"SubIndex 055\000"
+"SubIndex 056\000"
+"SubIndex 057\000"
+"SubIndex 058\000"
+"SubIndex 059\000"
+"SubIndex 060\000"
+"SubIndex 061\000"
+"SubIndex 062\000"
+"SubIndex 063\000"
+"SubIndex 064\000"
+"SubIndex 065\000"
+"SubIndex 066\000"
+"SubIndex 067\000"
+"SubIndex 068\000"
+"SubIndex 069\000"
+"SubIndex 070\000"
+"SubIndex 071\000"
+"SubIndex 072\000"
+"SubIndex 073\000"
+"SubIndex 074\000"
+"SubIndex 075\000"
+"SubIndex 076\000"
+"SubIndex 077\000"
+"SubIndex 078\000"
+"SubIndex 079\000"
+"SubIndex 080\000"
+"SubIndex 081\000"
+"SubIndex 082\000"
+"SubIndex 083\000"
+"SubIndex 084\000"
+"SubIndex 085\000"
+"SubIndex 086\000"
+"SubIndex 087\000"
+"SubIndex 088\000"
+"SubIndex 089\000"
+"SubIndex 090\000"
+"SubIndex 091\000"
+"SubIndex 092\000"
+"SubIndex 093\000"
+"SubIndex 094\000"
+"SubIndex 095\000"
+"SubIndex 096\000"
+"SubIndex 097\000"
+"SubIndex 098\000"
+"SubIndex 099\000"
+"SubIndex 100\000"
+"SubIndex 101\000"
+"SubIndex 102\000"
+"SubIndex 103\000"
+"SubIndex 104\000"
+"SubIndex 105\000"
+"SubIndex 106\000"
+"SubIndex 107\000"
+"SubIndex 108\000"
+"SubIndex 109\000"
+"SubIndex 110\000"
+"SubIndex 111\000"
+"SubIndex 112\000"
+"SubIndex 113\000"
+"SubIndex 114\000"
+"SubIndex 115\000"
+"SubIndex 116\000"
+"SubIndex 117\000"
+"SubIndex 118\000"
+"SubIndex 119\000"
+"SubIndex 120\000"
+"SubIndex 121\000"
+"SubIndex 122\000"
+"SubIndex 123\000"
+"SubIndex 124\000"
+"SubIndex 125\000"
+"SubIndex 126\000"
+"SubIndex 127\000"
+"SubIndex 128\000\377";
 #endif //#ifdef _OBJD_
 
 #ifndef _SSC_DEVICE_OBJECTS_H_
@@ -319,134 +991,134 @@ OBJCONST UCHAR OBJMEM aName0x1A00[] = "DI Unit1\000"
 */
 typedef struct OBJ_STRUCT_PACKED_START {
 UINT16 u16SubIndex0;
-UINT32 SI1;
-UINT32 SI2;
-UINT32 SI3;
-UINT32 SI4;
-UINT32 SI5;
-UINT32 SI6;
-UINT32 SI7;
-UINT32 SI8;
-UINT32 SI9;
-UINT32 SI10;
-UINT32 SI11;
-UINT32 SI12;
-UINT32 SI13;
-UINT32 SI14;
-UINT32 SI15;
-UINT32 SI16;
-UINT32 SI17;
-UINT32 SI18;
-UINT32 SI19;
-UINT32 SI20;
-UINT32 SI21;
-UINT32 SI22;
-UINT32 SI23;
-UINT32 SI24;
-UINT32 SI25;
-UINT32 SI26;
-UINT32 SI27;
-UINT32 SI28;
-UINT32 SI29;
-UINT32 SI30;
-UINT32 SI31;
-UINT32 SI32;
-UINT32 SI33;
-UINT32 SI34;
-UINT32 SI35;
-UINT32 SI36;
-UINT32 SI37;
-UINT32 SI38;
-UINT32 SI39;
-UINT32 SI40;
-UINT32 SI41;
-UINT32 SI42;
-UINT32 SI43;
-UINT32 SI44;
-UINT32 SI45;
-UINT32 SI46;
-UINT32 SI47;
-UINT32 SI48;
-UINT32 SI49;
-UINT32 SI50;
-UINT32 SI51;
-UINT32 SI52;
-UINT32 SI53;
-UINT32 SI54;
-UINT32 SI55;
-UINT32 SI56;
-UINT32 SI57;
-UINT32 SI58;
-UINT32 SI59;
-UINT32 SI60;
-UINT32 SI61;
-UINT32 SI62;
-UINT32 SI63;
-UINT32 SI64;
-UINT32 SI65;
-UINT32 SI66;
-UINT32 SI67;
-UINT32 SI68;
-UINT32 SI69;
-UINT32 SI70;
-UINT32 SI71;
-UINT32 SI72;
-UINT32 SI73;
-UINT32 SI74;
-UINT32 SI75;
-UINT32 SI76;
-UINT32 SI77;
-UINT32 SI78;
-UINT32 SI79;
-UINT32 SI80;
-UINT32 SI81;
-UINT32 SI82;
-UINT32 SI83;
-UINT32 SI84;
-UINT32 SI85;
-UINT32 SI86;
-UINT32 SI87;
-UINT32 SI88;
-UINT32 SI89;
-UINT32 SI90;
-UINT32 SI91;
-UINT32 SI92;
-UINT32 SI93;
-UINT32 SI94;
-UINT32 SI95;
-UINT32 SI96;
-UINT32 SI97;
-UINT32 SI98;
-UINT32 SI99;
-UINT32 SI100;
-UINT32 SI101;
-UINT32 SI102;
-UINT32 SI103;
-UINT32 SI104;
-UINT32 SI105;
-UINT32 SI106;
-UINT32 SI107;
-UINT32 SI108;
-UINT32 SI109;
-UINT32 SI110;
-UINT32 SI111;
-UINT32 SI112;
-UINT32 SI113;
-UINT32 SI114;
-UINT32 SI115;
-UINT32 SI116;
-UINT32 SI117;
-UINT32 SI118;
-UINT32 SI119;
-UINT32 SI120;
-UINT32 SI121;
-UINT32 SI122;
-UINT32 SI123;
-UINT32 SI124;
-UINT32 SI125;
-UINT32 SI126;
-UINT32 SI127;
-UINT32 SI128;
+UINT32 SI1; /* Subindex1 -  */
+UINT32 SI2; /* Subindex2 -  */
+UINT32 SI3; /* Subindex3 -  */
+UINT32 SI4; /* Subindex4 -  */
+UINT32 SI5; /* Subindex5 -  */
+UINT32 SI6; /* Subindex6 -  */
+UINT32 SI7; /* Subindex7 -  */
+UINT32 SI8; /* Subindex8 -  */
+UINT32 SI9; /* Subindex9 -  */
+UINT32 SI10; /* Subindex10 -  */
+UINT32 SI11; /* Subindex11 -  */
+UINT32 SI12; /* Subindex12 -  */
+UINT32 SI13; /* Subindex13 -  */
+UINT32 SI14; /* Subindex14 -  */
+UINT32 SI15; /* Subindex15 -  */
+UINT32 SI16; /* Subindex16 -  */
+UINT32 SI17; /* Subindex17 -  */
+UINT32 SI18; /* Subindex18 -  */
+UINT32 SI19; /* Subindex19 -  */
+UINT32 SI20; /* Subindex20 -  */
+UINT32 SI21; /* Subindex21 -  */
+UINT32 SI22; /* Subindex22 -  */
+UINT32 SI23; /* Subindex23 -  */
+UINT32 SI24; /* Subindex24 -  */
+UINT32 SI25; /* Subindex25 -  */
+UINT32 SI26; /* Subindex26 -  */
+UINT32 SI27; /* Subindex27 -  */
+UINT32 SI28; /* Subindex28 -  */
+UINT32 SI29; /* Subindex29 -  */
+UINT32 SI30; /* Subindex30 -  */
+UINT32 SI31; /* Subindex31 -  */
+UINT32 SI32; /* Subindex32 -  */
+UINT32 SI33; /* Subindex33 -  */
+UINT32 SI34; /* Subindex34 -  */
+UINT32 SI35; /* Subindex35 -  */
+UINT32 SI36; /* Subindex36 -  */
+UINT32 SI37; /* Subindex37 -  */
+UINT32 SI38; /* Subindex38 -  */
+UINT32 SI39; /* Subindex39 -  */
+UINT32 SI40; /* Subindex40 -  */
+UINT32 SI41; /* Subindex41 -  */
+UINT32 SI42; /* Subindex42 -  */
+UINT32 SI43; /* Subindex43 -  */
+UINT32 SI44; /* Subindex44 -  */
+UINT32 SI45; /* Subindex45 -  */
+UINT32 SI46; /* Subindex46 -  */
+UINT32 SI47; /* Subindex47 -  */
+UINT32 SI48; /* Subindex48 -  */
+UINT32 SI49; /* Subindex49 -  */
+UINT32 SI50; /* Subindex50 -  */
+UINT32 SI51; /* Subindex51 -  */
+UINT32 SI52; /* Subindex52 -  */
+UINT32 SI53; /* Subindex53 -  */
+UINT32 SI54; /* Subindex54 -  */
+UINT32 SI55; /* Subindex55 -  */
+UINT32 SI56; /* Subindex56 -  */
+UINT32 SI57; /* Subindex57 -  */
+UINT32 SI58; /* Subindex58 -  */
+UINT32 SI59; /* Subindex59 -  */
+UINT32 SI60; /* Subindex60 -  */
+UINT32 SI61; /* Subindex61 -  */
+UINT32 SI62; /* Subindex62 -  */
+UINT32 SI63; /* Subindex63 -  */
+UINT32 SI64; /* Subindex64 -  */
+UINT32 SI65; /* Subindex65 -  */
+UINT32 SI66; /* Subindex66 -  */
+UINT32 SI67; /* Subindex67 -  */
+UINT32 SI68; /* Subindex68 -  */
+UINT32 SI69; /* Subindex69 -  */
+UINT32 SI70; /* Subindex70 -  */
+UINT32 SI71; /* Subindex71 -  */
+UINT32 SI72; /* Subindex72 -  */
+UINT32 SI73; /* Subindex73 -  */
+UINT32 SI74; /* Subindex74 -  */
+UINT32 SI75; /* Subindex75 -  */
+UINT32 SI76; /* Subindex76 -  */
+UINT32 SI77; /* Subindex77 -  */
+UINT32 SI78; /* Subindex78 -  */
+UINT32 SI79; /* Subindex79 -  */
+UINT32 SI80; /* Subindex80 -  */
+UINT32 SI81; /* Subindex81 -  */
+UINT32 SI82; /* Subindex82 -  */
+UINT32 SI83; /* Subindex83 -  */
+UINT32 SI84; /* Subindex84 -  */
+UINT32 SI85; /* Subindex85 -  */
+UINT32 SI86; /* Subindex86 -  */
+UINT32 SI87; /* Subindex87 -  */
+UINT32 SI88; /* Subindex88 -  */
+UINT32 SI89; /* Subindex89 -  */
+UINT32 SI90; /* Subindex90 -  */
+UINT32 SI91; /* Subindex91 -  */
+UINT32 SI92; /* Subindex92 -  */
+UINT32 SI93; /* Subindex93 -  */
+UINT32 SI94; /* Subindex94 -  */
+UINT32 SI95; /* Subindex95 -  */
+UINT32 SI96; /* Subindex96 -  */
+UINT32 SI97; /* Subindex97 -  */
+UINT32 SI98; /* Subindex98 -  */
+UINT32 SI99; /* Subindex99 -  */
+UINT32 SI100; /* Subindex100 -  */
+UINT32 SI101; /* Subindex101 -  */
+UINT32 SI102; /* Subindex102 -  */
+UINT32 SI103; /* Subindex103 -  */
+UINT32 SI104; /* Subindex104 -  */
+UINT32 SI105; /* Subindex105 -  */
+UINT32 SI106; /* Subindex106 -  */
+UINT32 SI107; /* Subindex107 -  */
+UINT32 SI108; /* Subindex108 -  */
+UINT32 SI109; /* Subindex109 -  */
+UINT32 SI110; /* Subindex110 -  */
+UINT32 SI111; /* Subindex111 -  */
+UINT32 SI112; /* Subindex112 -  */
+UINT32 SI113; /* Subindex113 -  */
+UINT32 SI114; /* Subindex114 -  */
+UINT32 SI115; /* Subindex115 -  */
+UINT32 SI116; /* Subindex116 -  */
+UINT32 SI117; /* Subindex117 -  */
+UINT32 SI118; /* Subindex118 -  */
+UINT32 SI119; /* Subindex119 -  */
+UINT32 SI120; /* Subindex120 -  */
+UINT32 SI121; /* Subindex121 -  */
+UINT32 SI122; /* Subindex122 -  */
+UINT32 SI123; /* Subindex123 -  */
+UINT32 SI124; /* Subindex124 -  */
+UINT32 SI125; /* Subindex125 -  */
+UINT32 SI126; /* Subindex126 -  */
+UINT32 SI127; /* Subindex127 -  */
+UINT32 SI128; /* Subindex128 -  */
 } OBJ_STRUCT_PACKED_END
 TOBJ1A00;
 #endif //#ifndef _SSC_DEVICE_OBJECTS_H_
@@ -571,65 +1243,20 @@ PROTO TOBJ1C13 sTxPDOassign
 */
 #ifdef _OBJD_
 /**
-* \brief Object entry descriptions<br>
-* <br>
-* SubIndex 0<br>
-* SubIndex 1 - DI 1<br>
-* SubIndex 2 - DI 2<br>
-* SubIndex 3 - DI 3<br>
-* SubIndex 4 - DI 4<br>
-* SubIndex 5 - DI 5<br>
-* SubIndex 6 - DI 6<br>
-* SubIndex 7 - DI 7<br>
-* SubIndex 8 - DI 8<br>
-* SubIndex 9 - DI 9<br>
-* SubIndex 10 - DI 10<br>
-* SubIndex 11 - DI 11<br>
-* SubIndex 12 - DI 12<br>
-* SubIndex 13 - DI 13<br>
-* SubIndex 14 - DI 14<br>
-* SubIndex 15 - DI 15<br>
-* SubIndex 16 - DI 16<br>
+* \brief Entry descriptions<br>
+* 
+* Subindex 0<br>
+* Subindex 1 - n (the same entry description is used)<br>
 */
 OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0x6000[] = {
 { DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex1 - DI 1 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex2 - DI 2 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex3 - DI 3 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex4 - DI 4 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex5 - DI 5 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex6 - DI 6 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex7 - DI 7 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex8 - DI 8 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex9 - DI 9 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex10 - DI 10 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex11 - DI 11 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex12 - DI 12 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex13 - DI 13 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex14 - DI 14 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }, /* Subindex15 - DI 15 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }}; /* Subindex16 - DI 16 */
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ }};
 
 /**
-* \brief Object/Entry names
+* \brief Object name definition<br>
+* For Subindex 1 to n the syntax 'Subindex XXX' is used
 */
-OBJCONST UCHAR OBJMEM aName0x6000[] = "DI Unit1\000"
-"DI 1\000"
-"DI 2\000"
-"DI 3\000"
-"DI 4\000"
-"DI 5\000"
-"DI 6\000"
-"DI 7\000"
-"DI 8\000"
-"DI 9\000"
-"DI 10\000"
-"DI 11\000"
-"DI 12\000"
-"DI 13\000"
-"DI 14\000"
-"DI 15\000"
-"DI 16\000\377";
+OBJCONST UCHAR OBJMEM aName0x6000[] = "DI Unit1\000\377";
 #endif //#ifdef _OBJD_
 
 #ifndef _SSC_DEVICE_OBJECTS_H_
@@ -637,135 +1264,9 @@ OBJCONST UCHAR OBJMEM aName0x6000[] = "DI Unit1\000"
 * \brief Object structure
 */
 typedef struct OBJ_STRUCT_PACKED_START {
-UINT16 u16SubIndex0;
-UINT16 val;
-UINT16 DI2;
-UINT16 DI3;
-UINT16 DI4;
-UINT16 DI5;
-UINT16 DI6;
-UINT16 DI7;
-UINT16 DI8;
-UINT16 DI9;
-UINT16 DI10;
-UINT16 DI11;
-UINT16 DI12;
-UINT16 DI13;
-UINT16 DI14;
-UINT16 DI15;
-UINT16 DI16;
-UINT16 DI17;
-UINT16 DI18;
-UINT16 DI19;
-UINT16 DI20;
-UINT16 DI21;
-UINT16 DI22;
-UINT16 DI23;
-UINT16 DI24;
-UINT16 DI25;
-UINT16 DI26;
-UINT16 DI27;
-UINT16 DI28;
-UINT16 DI29;
-UINT16 DI30;
-UINT16 DI31;
-UINT16 DI32;
-UINT16 DI33;
-UINT16 DI34;
-UINT16 DI35;
-UINT16 DI36;
-UINT16 DI37;
-UINT16 DI38;
-UINT16 DI39;
-UINT16 DI40;
-UINT16 DI41;
-UINT16 DI42;
-UINT16 DI43;
-UINT16 DI44;
-UINT16 DI45;
-UINT16 DI46;
-UINT16 DI47;
-UINT16 DI48;
-UINT16 DI49;
-UINT16 DI50;
-UINT16 DI51;
-UINT16 DI52;
-UINT16 DI53;
-UINT16 DI54;
-UINT16 DI55;
-UINT16 DI56;
-UINT16 DI57;
-UINT16 DI58;
-UINT16 DI59;
-UINT16 DI60;
-UINT16 DI61;
-UINT16 DI62;
-UINT16 DI63;
-UINT16 DI64;
-UINT16 DI65;
-UINT16 DI66;
-UINT16 DI67;
-UINT16 DI68;
-UINT16 DI69;
-UINT16 DI70;
-UINT16 DI71;
-UINT16 DI72;
-UINT16 DI73;
-UINT16 DI74;
-UINT16 DI75;
-UINT16 DI76;
-UINT16 DI77;
-UINT16 DI78;
-UINT16 DI79;
-UINT16 DI80;
-UINT16 DI81;
-UINT16 DI82;
-UINT16 DI83;
-UINT16 DI84;
-UINT16 DI85;
-UINT16 DI86;
-UINT16 DI87;
-UINT16 DI88;
-UINT16 DI89;
-UINT16 DI90;
-UINT16 DI91;
-UINT16 DI92;
-UINT16 DI93;
-UINT16 DI94;
-UINT16 DI95;
-UINT16 DI96;
-UINT16 DI97;
-UINT16 DI98;
-UINT16 DI99;
-UINT16 DI100;
-UINT16 DI101;
-UINT16 DI102;
-UINT16 DI103;
-UINT16 DI104;
-UINT16 DI105;
-UINT16 DI106;
-UINT16 DI107;
-UINT16 DI108;
-UINT16 DI109;
-UINT16 DI110;
-UINT16 DI111;
-UINT16 DI112;
-UINT16 DI113;
-UINT16 DI114;
-UINT16 DI115;
-UINT16 DI116;
-UINT16 DI117;
-UINT16 DI118;
-UINT16 DI119;
-UINT16 DI120;
-UINT16 DI121;
-UINT16 DI122;
-UINT16 DI123;
-UINT16 DI124;
-UINT16 DI125;
-UINT16 DI126;
-UINT16 DI127;
-UINT16 DI128;} OBJ_STRUCT_PACKED_END
+UINT16   u16SubIndex0;  /**< \brief Subindex 0 */
+UINT16 aEntries[128];  /**< \brief Subindex 1 - 128 */
+} OBJ_STRUCT_PACKED_END
 TOBJ6000;
 #endif //#ifndef _SSC_DEVICE_OBJECTS_H_
 
@@ -774,7 +1275,7 @@ TOBJ6000;
 */
 PROTO TOBJ6000 DIUnit10x6000
 #if defined(_SSC_DEVICE_) && (_SSC_DEVICE_ == 1)
-={128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+={128,{0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000}}
 #endif
 ;
 /** @}*/
@@ -791,65 +1292,20 @@ PROTO TOBJ6000 DIUnit10x6000
 */
 #ifdef _OBJD_
 /**
-* \brief Object entry descriptions<br>
-* <br>
-* SubIndex 0<br>
-* SubIndex 1 - DO 1<br>
-* SubIndex 2 - DO 2<br>
-* SubIndex 3 - DO 3<br>
-* SubIndex 4 - DO 4<br>
-* SubIndex 5 - DO 5<br>
-* SubIndex 6 - DO 6<br>
-* SubIndex 7 - DO 7<br>
-* SubIndex 8 - DO 8<br>
-* SubIndex 9 - DO 9<br>
-* SubIndex 10 - DO 10<br>
-* SubIndex 11 - DO 11<br>
-* SubIndex 12 - DO 12<br>
-* SubIndex 13 - DO 13<br>
-* SubIndex 14 - DO 14<br>
-* SubIndex 15 - DO 15<br>
-* SubIndex 16 - DO 16<br>
+* \brief Entry descriptions<br>
+* 
+* Subindex 0<br>
+* Subindex 1 - n (the same entry description is used)<br>
 */
 OBJCONST TSDOINFOENTRYDESC    OBJMEM asEntryDesc0x7000[] = {
 { DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex1 - DO 1 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex2 - DO 2 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex3 - DO 3 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex4 - DO 4 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex5 - DO 5 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex6 - DO 6 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex7 - DO 7 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex8 - DO 8 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex9 - DO 9 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex10 - DO 10 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex11 - DO 11 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex12 - DO 12 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex13 - DO 13 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex14 - DO 14 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }, /* Subindex15 - DO 15 */
-{ DEFTYPE_BOOLEAN , 0x01 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }}; /* Subindex16 - DO 16 */
+{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ }};
 
 /**
-* \brief Object/Entry names
+* \brief Object name definition<br>
+* For Subindex 1 to n the syntax 'Subindex XXX' is used
 */
-OBJCONST UCHAR OBJMEM aName0x7000[] = "DO Unit2\000"
-"DO 1\000"
-"DO 2\000"
-"DO 3\000"
-"DO 4\000"
-"DO 5\000"
-"DO 6\000"
-"DO 7\000"
-"DO 8\000"
-"DO 9\000"
-"DO 10\000"
-"DO 11\000"
-"DO 12\000"
-"DO 13\000"
-"DO 14\000"
-"DO 15\000"
-"DO 16\000\377";
+OBJCONST UCHAR OBJMEM aName0x7000[] = "DO Unit2\000\377";
 #endif //#ifdef _OBJD_
 
 #ifndef _SSC_DEVICE_OBJECTS_H_
@@ -857,135 +1313,9 @@ OBJCONST UCHAR OBJMEM aName0x7000[] = "DO Unit2\000"
 * \brief Object structure
 */
 typedef struct OBJ_STRUCT_PACKED_START {
-UINT16 u16SubIndex0;
-UINT16 val;
-UINT16 DO2;
-UINT16 DO3;
-UINT16 DO4;
-UINT16 DO5;
-UINT16 DO6;
-UINT16 DO7;
-UINT16 DO8;
-UINT16 DO9;
-UINT16 DO10;
-UINT16 DO11;
-UINT16 DO12;
-UINT16 DO13;
-UINT16 DO14;
-UINT16 DO15;
-UINT16 DO16;
-UINT16 DO17;
-UINT16 DO18;
-UINT16 DO19;
-UINT16 DO20;
-UINT16 DO21;
-UINT16 DO22;
-UINT16 DO23;
-UINT16 DO24;
-UINT16 DO25;
-UINT16 DO26;
-UINT16 DO27;
-UINT16 DO28;
-UINT16 DO29;
-UINT16 DO30;
-UINT16 DO31;
-UINT16 DO32;
-UINT16 DO33;
-UINT16 DO34;
-UINT16 DO35;
-UINT16 DO36;
-UINT16 DO37;
-UINT16 DO38;
-UINT16 DO39;
-UINT16 DO40;
-UINT16 DO41;
-UINT16 DO42;
-UINT16 DO43;
-UINT16 DO44;
-UINT16 DO45;
-UINT16 DO46;
-UINT16 DO47;
-UINT16 DO48;
-UINT16 DO49;
-UINT16 DO50;
-UINT16 DO51;
-UINT16 DO52;
-UINT16 DO53;
-UINT16 DO54;
-UINT16 DO55;
-UINT16 DO56;
-UINT16 DO57;
-UINT16 DO58;
-UINT16 DO59;
-UINT16 DO60;
-UINT16 DO61;
-UINT16 DO62;
-UINT16 DO63;
-UINT16 DO64;
-UINT16 DO65;
-UINT16 DO66;
-UINT16 DO67;
-UINT16 DO68;
-UINT16 DO69;
-UINT16 DO70;
-UINT16 DO71;
-UINT16 DO72;
-UINT16 DO73;
-UINT16 DO74;
-UINT16 DO75;
-UINT16 DO76;
-UINT16 DO77;
-UINT16 DO78;
-UINT16 DO79;
-UINT16 DO80;
-UINT16 DO81;
-UINT16 DO82;
-UINT16 DO83;
-UINT16 DO84;
-UINT16 DO85;
-UINT16 DO86;
-UINT16 DO87;
-UINT16 DO88;
-UINT16 DO89;
-UINT16 DO90;
-UINT16 DO91;
-UINT16 DO92;
-UINT16 DO93;
-UINT16 DO94;
-UINT16 DO95;
-UINT16 DO96;
-UINT16 DO97;
-UINT16 DO98;
-UINT16 DO99;
-UINT16 DO100;
-UINT16 DO101;
-UINT16 DO102;
-UINT16 DO103;
-UINT16 DO104;
-UINT16 DO105;
-UINT16 DO106;
-UINT16 DO107;
-UINT16 DO108;
-UINT16 DO109;
-UINT16 DO110;
-UINT16 DO111;
-UINT16 DO112;
-UINT16 DO113;
-UINT16 DO114;
-UINT16 DO115;
-UINT16 DO116;
-UINT16 DO117;
-UINT16 DO118;
-UINT16 DO119;
-UINT16 DO120;
-UINT16 DO121;
-UINT16 DO122;
-UINT16 DO123;
-UINT16 DO124;
-UINT16 DO125;
-UINT16 DO126;
-UINT16 DO127;
-UINT16 DO128;} OBJ_STRUCT_PACKED_END
+UINT16   u16SubIndex0;  /**< \brief Subindex 0 */
+UINT16 aEntries[128];  /**< \brief Subindex 1 - 128 */
+} OBJ_STRUCT_PACKED_END
 TOBJ7000;
 #endif //#ifndef _SSC_DEVICE_OBJECTS_H_
 
@@ -994,7 +1324,7 @@ TOBJ7000;
 */
 PROTO TOBJ7000 DOUnit20x7000
 #if defined(_SSC_DEVICE_) && (_SSC_DEVICE_ == 1)
-={128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
+={128,{0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000}}
 #endif
 ;
 /** @}*/
@@ -1002,531 +1332,7 @@ PROTO TOBJ7000 DOUnit20x7000
 
 
 /******************************************************************************
-*                    asEntryDesc0x6000[] = {
-	{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READ | OBJACCESS_TXPDOMAPPING }
-};
-asEntryDesc0x7000[] = {
-	{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED16 , 0x10 , ACCESS_READWRITE | OBJACCESS_RXPDOMAPPING }
-};
-asEntryDesc0x1600[] = {
-	{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }
-};
-asEntryDesc0x1A00[] = {
-	{ DEFTYPE_UNSIGNED8 , 0x8 , ACCESS_READ },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING },
-	{ DEFTYPE_UNSIGNED32 , 0x20 , ACCESS_READ | OBJACCESS_RXPDOMAPPING }
-};
-Object 0xF008 : Parameters Handing
+*                    Object 0xF008 : Parameters Handing
 ******************************************************************************/
 /**
 * \addtogroup 0xF008 0xF008 | Parameters Handing
@@ -1601,13 +1407,14 @@ TOBJECT    OBJMEM ApplicationObjDic[] = {
 /* Object 0x1C13 */
 {NULL , NULL ,  0x1C13 , {DEFTYPE_UNSIGNED16 , 1 | (OBJCODE_ARR << 8)} , asEntryDesc0x1C13 , aName0x1C13 , &sTxPDOassign , NULL , NULL , 0x0000 },
 /* Object 0x6000 */
-{NULL , NULL ,  0x6000 , {DEFTYPE_RECORD , 128 | (OBJCODE_REC << 8)} , asEntryDesc0x6000 , aName0x6000 , &DIUnit10x6000 , NULL , NULL , 0x0000 },
+{NULL , NULL ,  0x6000 , {DEFTYPE_UNSIGNED16 , 128 | (OBJCODE_ARR << 8)} , asEntryDesc0x6000 , aName0x6000 , &DIUnit10x6000 , NULL , NULL , 0x0000 },
 /* Object 0x7000 */
-{NULL , NULL ,  0x7000 , {DEFTYPE_RECORD , 128 | (OBJCODE_REC << 8)} , asEntryDesc0x7000 , aName0x7000 , &DOUnit20x7000 , NULL , NULL , 0x0000 },
+{NULL , NULL ,  0x7000 , {DEFTYPE_UNSIGNED16 , 128 | (OBJCODE_ARR << 8)} , asEntryDesc0x7000 , aName0x7000 , &DOUnit20x7000 , NULL , NULL , 0x0000 },
 /* Object 0xF008 */
 {NULL , NULL ,  0xF008 , {DEFTYPE_RECORD , 4 | (OBJCODE_REC << 8)} , asEntryDesc0xF008 , aName0xF008 , &ParametersHanding0xF008 , NULL , NULL , 0x0000 },
 {NULL,NULL, 0xFFFF, {0, 0}, NULL, NULL, NULL, NULL}};
 #endif    //#ifdef _OBJD_
+
 #undef PROTO
 
 /** @}*/

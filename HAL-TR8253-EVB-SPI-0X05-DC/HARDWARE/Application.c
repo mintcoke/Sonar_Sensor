@@ -15,7 +15,7 @@
 *******************************************************************************/
 void DO_LED_Ctrl()
 {
-	UINT16 v = DOUnit20x7000.val;
+	UINT16 v = DOUnit20x7000.aEntries[0];
 	DOCH0=(v>>0)&1; DOCH1=(v>>1)&1; DOCH2=(v>>2)&1; DOCH3=(v>>3)&1;
 	DOCH4=(v>>4)&1; DOCH5=(v>>5)&1; DOCH6=(v>>6)&1; DOCH7=(v>>7)&1;
 	DOCH8=(v>>8)&1; DOCH9=(v>>9)&1; DOCH10=(v>>10)&1; DOCH11=(v>>11)&1;
