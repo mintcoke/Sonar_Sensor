@@ -1,0 +1,9 @@
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\ecatcoe.c
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\ecat_def.h
+stm32f407_ssc_hal\ecatcoe.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
+stm32f407_ssc_hal\ecatcoe.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\string.h
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\sdoserv.h
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\ecatcoe.h
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\mailbox.h
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\ecatcoe.h
+stm32f407_ssc_hal\ecatcoe.o: ..\SSC\mailbox.h

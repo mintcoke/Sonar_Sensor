@@ -1,0 +1,5 @@
+Record=TopLevelDocument|FileName=SCH-Connector.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=SCH-Connector.SchDoc|FileName=SCH-EC_port.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=SCH-Connector.SchDoc|FileName=SCH-Power.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=SCH-Connector.SchDoc|FileName=SCH-TR8253.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=SCH-Connector.SchDoc|FileName=SCH-TR8253_config.SchDoc|SheetNumber= 
