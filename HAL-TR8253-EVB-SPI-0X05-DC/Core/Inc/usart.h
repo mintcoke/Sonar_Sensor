@@ -16,7 +16,9 @@
 #define SENSOR_RX_BUF_SIZE 256
 
 void     Sensor_UART_Init(uint32_t baud);
+void     Sonar_RecvTick(void);
 void     Sensor_UART_Write(uint8_t* data, uint16_t len);
+void     Sensor_Trigger(void);
 uint16_t Sensor_UART_Available(void);
 uint8_t  Sensor_UART_Read(void);
 

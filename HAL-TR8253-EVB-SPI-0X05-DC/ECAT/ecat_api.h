@@ -12,17 +12,14 @@ extern "C" {
  *  改 PDO 大小只改 PDO_TX/RX_UINT16，其他自动适配
  * ═══════════════════════════════════════════════════════════════ */
 
-/* ── PDO 大小 (按需修改) ── */
-#define PDO_TX_UINT16   510
+/* ── PDO 大小 自动计算(无需修改) ── */
+#define PDO_TX_UINT16   510 //(1020字节)
 #define PDO_RX_UINT16   510
 
-/* ── PDO 上限 (不必改) ── */
+/* ── PDO 上限 (无需修改) ── */
 #define PDO_TX_MAX      0x400
 #define PDO_RX_MAX      0x400
 
-/* ── 自动计算 ── */
-#define PDO_TX_BYTES    ((PDO_TX_UINT16) * 2U)
-#define PDO_RX_BYTES    ((PDO_RX_UINT16) * 2U)
 
 /* ═══════════════════════════════════════════════════════════════
  *  统一 PDO 访问 — DI(n) / DO(n)
@@ -41,15 +38,15 @@ extern "C" {
 #define T_STATE      0
 #define T_ALARM      1
 #define T_VERSION    2
+#define T_DISTANCE   3     // UINT16  声纳距离(mm)
 
 /* ── RxPDO (PLC→设备) ── */
-#define R_CTRL       0
-#define R_SPEED      1
+#define R_LED        0
 
 /* ═══════════════════════════════════════════════════════════════
  *  持久化参数
  * ═══════════════════════════════════════════════════════════════ */
-typedef struct {
+typedef struct{
     float    sonar_zero_offset;
     float    sonar_scale_factor;
     uint16_t modbus_slave_addr;

@@ -169,7 +169,7 @@ UINT16 APPL_StartOutputHandler(void)
 UINT16 APPL_StopOutputHandler(void)
 {
     // Turn off the LED when exiting the OP state from the station
-    DO_LED_Off();
+    if (g_pfnSafeOutput) g_pfnSafeOutput();
     return ALSTATUSCODE_NOERROR;
 }
 
@@ -290,8 +290,8 @@ void APPL_OutputMapping(UINT16* pData)
 *////////////////////////////////////////////////////////////////////////////////////////
 void APPL_Application(void)
 {
-	if(bEcatOutputUpdateRunning)
-		DO_LED_Ctrl(); 
+	if(bEcatOutputUpdateRunning && g_pfnPeriodicTask)
+		g_pfnPeriodicTask();
 
 }
 

@@ -30,6 +30,10 @@
 #define DICH6()   PBin(8)
 #define DICH7()   PBin(9)
 
+extern uint16_t g_SonarDist;
+extern uint8_t  g_SonarBuf[4];
+void     Sonar_Task(void);
+uint16_t Sonar_Poll(void);
 void DO_LED_Ctrl(void);
 void DO_LED_Off(void);
 

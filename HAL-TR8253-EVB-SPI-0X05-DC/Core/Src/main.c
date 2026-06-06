@@ -30,6 +30,7 @@
 #include "TR8253Evb.h"
 #include "Application.h"
 #include "ecat_api.h"
+#include "usart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -101,21 +102,16 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_Delay(100);
-  HW_Init();			
-  MainInit(); 
-	
-  bRunApplication = TRUE;	
-  do
+  ECAT_Stack_Init();
+  Sensor_UART_Init(115200);
+  ECAT_RegisterPeriodicTask(DO_LED_Ctrl);
+  ECAT_RegisterSafeOutput(DO_LED_Off);
+
+  while (1)
   {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-    MainLoop();
-
-  } while (bRunApplication == TRUE);
-
-  HW_Release();
+    Sonar_Task();
+    ECAT_Stack_MainLoop();
+  }
   /* USER CODE END 3 */
 }
 
