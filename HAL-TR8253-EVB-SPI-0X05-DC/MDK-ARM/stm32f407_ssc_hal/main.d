@@ -56,6 +56,6 @@ stm32f407_ssc_hal\main.o: ..\SSC\mailbox.h
 stm32f407_ssc_hal\main.o: ..\SSC\ecatappl.h
 stm32f407_ssc_hal\main.o: ..\SSC\TR8253Evb.h
 stm32f407_ssc_hal\main.o: ..\HARDWARE\Application.h
+stm32f407_ssc_hal\main.o: ..\ECAT\ecat_api.h
 stm32f407_ssc_hal\main.o: ..\SYSTEM\sys\sys.h
-stm32f407_ssc_hal\main.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
-stm32f407_ssc_hal\main.o: ..\ECAT\ecat_pdo_config.h
+stm32f407_ssc_hal\main.o: ../Core/Inc/usart.h

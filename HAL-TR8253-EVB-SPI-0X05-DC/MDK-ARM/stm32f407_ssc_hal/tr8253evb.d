@@ -42,15 +42,6 @@ stm32f407_ssc_hal\tr8253evb.o: ..\SSC\esc.h
 stm32f407_ssc_hal\tr8253evb.o: ..\SSC\TR8253Evb.h
 stm32f407_ssc_hal\tr8253evb.o: ..\SSC\ecatappl.h
 stm32f407_ssc_hal\tr8253evb.o: ..\ECAT\ecat_api.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\ecatappl.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\coeappl.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\objdef.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\sdoserv.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\ecatcoe.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\mailbox.h
-stm32f407_ssc_hal\tr8253evb.o: ../Core/Inc/ecat_cb.h
-stm32f407_ssc_hal\tr8253evb.o: ..\SSC\SSC-DeviceObjects.h
-stm32f407_ssc_hal\tr8253evb.o: ..\ECAT\ecat_pdo_types.h
 stm32f407_ssc_hal\tr8253evb.o: ../Core/Inc/spi.h
 stm32f407_ssc_hal\tr8253evb.o: ../Core/Inc/main.h
 stm32f407_ssc_hal\tr8253evb.o: ../Core/Inc/tim.h

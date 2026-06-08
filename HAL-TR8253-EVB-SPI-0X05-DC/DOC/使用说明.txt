@@ -1,0 +1,165 @@
+STM32F407 EtherCAT 从站 + 声纳 — 业务工程师使用说明
+
+一、你需要知道什么
+这套代码把 EtherCAT 协议栈、声纳驱动、Flash 存参数全封装好了。你只需要改两个文件：
+  ecat_api.h    改 PDO 变量命名、大小、持久化参数结构体
+  Application.c 写业务逻辑（用 DI(n) / DO(n) 读写 PLC 数据）
+其他文件是库代码，编好不动。
+
+
+二、项目结构速览
+  HARDWARE/Application.c    你的业务代码
+  HARDWARE/Application.h    函数声明 + LED GPIO
+  ECAT/ecat_api.h           PDO 变量命名表 + 库 API
+  ECAT/ecat_api.c           库本体 (EtherCAT + PDO映射 + Flash持久化)
+  Core/Src/usart.c          声纳 DMA 驱动
+  Core/Src/main.c           主函数 (不用改)
+  SSC/SSC-DeviceObjects.h   SSC Tool 生成的对象字典 (不用改)
+
+
+三、和 PLC 交换数据的核心接口
+
+3.1 读 PLC 发来的数据 (RxPDO)
+  UINT16 v = DO(偏移量);   // 读一个 UINT16
+当前定义 (在 ecat_api.h):
+  #define R_LED   0    // DO(0) = LED 控制字, 低 15 位各控一个 LED
+
+3.2 写给 PLC 的数据 (TxPDO)
+  DI(偏移量) = 值;   // 写一个 UINT16
+当前定义:
+  #define T_STATE     0    // DI(0) = 设备状态
+  #define T_ALARM     1    // DI(1) = 报警码
+  #define T_VERSION   2    // DI(2) = 固件版本
+  #define T_DISTANCE  3    // DI(3) = 声纳距离 (mm)
+
+3.3 加新的 PDO 变量
+在 ecat_api.h 的命名表里加一行 #define，然后在 Application.c 里读写即可:
+  // ecat_api.h 里加:
+  #define T_TEMP   4     // DI(4) = 温度
+  // Application.c 里:
+  DI(T_TEMP) = ReadTemperature();
+
+
+四、在 Application.c 里写业务逻辑
+
+4.1 周期任务 (OP 时自动调用)
+  void DO_LED_Ctrl()
+  {
+      DI(T_DISTANCE) = Sonar_Poll();   // 声纳距离发给 PLC
+      UINT16 v = DO(R_LED);            // 读 PLC 发来的 LED 控制
+      DOCH0=(v>>0)&1;
+      DOCH1=(v>>1)&1;
+      // ... 控制硬件 LED 引脚
+  }
+这个函数在 EtherCAT 进入 OP 后自动周期调用，不需要你手动触发。
+
+4.2 安全输出 (退出 OP 时自动调用)
+  void DO_LED_Off()
+  {
+      DOCH0 = 0; DOCH1 = 0; /* ... */
+  }
+
+
+五、声纳传感器
+
+5.1 硬件接线
+  声纳 VCC(1) → 5V 外部供电
+  声纳 GND(2) → GND (必须共地)
+  声纳 RX(3)  → PC6 (USART6_TX, 触发脉冲)
+  声纳 TX(4)  → PC7 (USART6_RX, 数据接收)
+
+5.2 数据格式
+  声纳返回 4 字节帧: FF Data_H Data_L SUM
+  FF = 帧头
+  Data_H x 256 + Data_L = 距离 (mm)
+  SUM = (FF + Data_H + Data_L) & 0xFF
+
+5.3 在代码里读声纳
+  Sonar_Poll() 自动返回最新距离值:
+  uint16_t dist = Sonar_Poll();  // 512mm = 0.5m
+  距离存放在全局变量 g_SonarDist，Keil Debug 可直接 Watch。
+  g_SonarBuf[4] 存最后收到的 4 字节原始帧，方便调试。
+
+
+六、持久化参数 (掉电保存)
+
+6.1 加参数
+在 ecat_api.h 的 PersistentParams_t 结构体里加字段 (在 checksum 前面):
+  typedef struct {
+      float    sonar_zero_offset;
+      float    sonar_scale_factor;
+      uint16_t modbus_slave_addr;
+      uint16_t baudrate_code;
+      uint32_t reserved[8];
+      uint32_t checksum;            // 自动计算, 不用动
+  } PersistentParams_t;
+加字段只能在 checksum 前面加。reserved[8] 不够用了就加大它。
+
+6.2 读写参数
+  读 (上电自动从 Flash 恢复): float offset = g_PersistentParams.sonar_zero_offset;
+  写并保存:
+    g_PersistentParams.sonar_zero_offset = 2.5f;
+    ECAT_SetParamDirty();   // 标记脏, 下个循环自动写 Flash
+
+
+七、LED 定义
+Application.h 里定义了 16 个输出 LED 和 8 个输入:
+  DOCH0-DOCH15: 映射到 PD/PE 各引脚
+  DICH0-DICH7:  映射到 PG/PB 各引脚
+  DOCH15 是声纳专用指示灯
+
+
+八、常见操作
+
+修改声纳触发频率:
+  Application.c > Sonar_Task 里改 50 这个值 (单位 ms，必须 >33ms)
+
+修改串口波特率:
+  main.c > Sensor_UART_Init(115200) > 改成其他值
+
+进不了 OP:
+  1. 检查网线、IP 配置
+  2. Keil Debug 看 nAlStatus: 1=INIT 2=PREOP 4=SAFEOP 8=OP
+  3. ECAT_Stack_Init 不会死等，HW_Init 失败 3 次后继续运行
+
+PLC 读到 0 但固件写进去了:
+  检查 ESI 文件是否和固件 PDO 映射一致。用 SSC Tool 从 XLSX 重新导出 XML。
+
+
+九、库 API 速查
+  void     ECAT_Stack_Init(void);              // 初始化 EtherCAT
+  void     ECAT_Stack_MainLoop(void);          // 主循环 (必须在 while(1) 里调)
+  void     ECAT_RegisterPeriodicTask(cb);      // 注册 OP 周期任务
+  void     ECAT_RegisterSafeOutput(cb);         // 注册退出 OP 时的回调
+  uint8_t  ECAT_IsOpRunning(void);             // 是否在 OP 状态
+  uint8_t  ECAT_GetAlState(void);              // 读 EtherCAT 状态码
+  uint32_t ECAT_GetParamSize(void);            // 持久化参数大小
+  void*    ECAT_GetParamPtr(void);             // 持久化参数指针
+  void     ECAT_SetParamDirty(void);           // 标记参数需要保存
+  uint16_t Sonar_Poll(void);                   // 读声纳距离 (mm)
+
+十、SSC Tool 升级对象字典后需要做什么
+
+用 SSC Tool 打开 SSC-Device.xlsx 重新生成代码后, 以下文件会被覆盖, 需要手动恢复:
+
+覆盖后需要改的文件 (两行):
+
+1. SSC-Device.h 末尾
+   找到被覆盖掉的这行注释, 补回:
+   #include "ecat_api.h"
+
+2. SSC-Device.c 里的 APPL_Application 函数
+   把被覆盖的硬编码改成回调:
+   if(bEcatOutputUpdateRunning && g_pfnPeriodicTask)
+       g_pfnPeriodicTask();
+   APPL_StopOutputHandler 里:
+   if (g_pfnSafeOutput) g_pfnSafeOutput();
+
+不需要动的文件:
+  ecat_api.h/c      库文件, SSC Tool 不碰
+  Application.c/h   业务代码, SSC Tool 不碰
+  usart.c/h         声纳驱动, SSC Tool 不碰
+  App_Flash.c       Flash 存储, SSC Tool 不碰
+  main.c            主函数, SSC Tool 不碰
+
+升级完 SSC, 改两行, 重新编译即可。

@@ -43,12 +43,12 @@ static uint32_t ComputeChecksum(const PersistentParams_t *p)
 
 /* ==========================================================
  * 第3步: 保存到 Flash
- *        STM32F407 Sector 11: 0x080E0000, 128KB
+ *        STM32F407ZE 512KB: Sector 4, 0x08010000, 64KB
  *        自动校验是否变化, 不变化跳过(减少擦写磨损)
  *        业务工程师无需关心此函数。
  * ========================================================== */
-#define FLASH_ADDR  0x080E0000
-#define FLASH_SECT  FLASH_SECTOR_11
+#define FLASH_ADDR  0x08010000
+#define FLASH_SECT  FLASH_SECTOR_4
 
 void App_Save_Params_To_Flash(void)
 {
@@ -77,14 +77,15 @@ void App_Save_Params_To_Flash(void)
         uint32_t cnt   = (size + 3) / 4;
         uint32_t *p    = (uint32_t *)&g_PersistentParams;
         uint32_t i;
+        HAL_StatusTypeDef prog_ok = HAL_OK;
         for (i = 0; i < cnt; i++) {
-            HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, p[i]);
+            if (HAL_FLASH_Program(FLASH_TYPEPROGRAM_WORD, addr, p[i]) != HAL_OK)
+                { prog_ok = HAL_ERROR; break; }
             addr += 4;
         }
+        if (prog_ok == HAL_OK) g_bConfigDirty = 0;  // 成功才清脏位
     }
-
     HAL_FLASH_Lock();
-    g_bConfigDirty = 0;
 }
 
 /* ==========================================================

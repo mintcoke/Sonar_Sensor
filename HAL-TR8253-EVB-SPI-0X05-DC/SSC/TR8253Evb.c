@@ -337,15 +337,19 @@ UINT8 HW_Init(void)
     UINT32 intMask;
 
     SPI_Init();
+    DESELECT_SPI;   // 确保片选初始为高
 
-
-    do
     {
-        intMask = 0x93;
-        HW_EscWriteDWord(intMask, ESC_AL_EVENTMASK_OFFSET);
-        intMask = 0;
-        HW_EscReadDWord(intMask, ESC_AL_EVENTMASK_OFFSET);
-    } while (intMask != 0x93);
+        int retry = 0;
+        do
+        {
+            intMask = 0x93;
+            HW_EscWriteDWord(intMask, ESC_AL_EVENTMASK_OFFSET);
+            intMask = 0;
+            HW_EscReadDWord(intMask, ESC_AL_EVENTMASK_OFFSET);
+            if (++retry > 1000) return 1;   // 超时退出, 不卡死
+        } while (intMask != 0x93);
+    }
 
     intMask = 0x00;
 

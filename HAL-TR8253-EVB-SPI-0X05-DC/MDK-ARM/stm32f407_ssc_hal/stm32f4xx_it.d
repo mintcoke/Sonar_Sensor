@@ -33,3 +33,4 @@ stm32f407_ssc_hal\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_
 stm32f407_ssc_hal\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407_ssc_hal\stm32f4xx_it.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407_ssc_hal\stm32f4xx_it.o: ../Core/Inc/stm32f4xx_it.h
+stm32f407_ssc_hal\stm32f4xx_it.o: ../Core/Inc/usart.h

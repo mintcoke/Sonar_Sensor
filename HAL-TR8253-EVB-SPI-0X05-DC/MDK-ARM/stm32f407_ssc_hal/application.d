@@ -1,12 +1,12 @@
 stm32f407_ssc_hal\application.o: ..\HARDWARE\Application.c
 stm32f407_ssc_hal\application.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\string.h
-stm32f407_ssc_hal\application.o: ..\HARDWARE\ecat_pdo_config.h
+stm32f407_ssc_hal\application.o: ..\ECAT\ecat_api.h
+stm32f407_ssc_hal\application.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
 stm32f407_ssc_hal\application.o: ..\HARDWARE\Application.h
 stm32f407_ssc_hal\application.o: ..\SYSTEM\sys\sys.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Include/core_cm4.h
-stm32f407_ssc_hal\application.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdint.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Include/cmsis_version.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 stm32f407_ssc_hal\application.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -35,7 +35,7 @@ stm32f407_ssc_hal\application.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_h
 stm32f407_ssc_hal\application.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 stm32f407_ssc_hal\application.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 stm32f407_ssc_hal\application.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-stm32f407_ssc_hal\application.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h
+stm32f407_ssc_hal\application.o: ../Core/Inc/usart.h
 stm32f407_ssc_hal\application.o: ..\SSC\SSC-Device.h
 stm32f407_ssc_hal\application.o: ..\SSC\ecat_def.h
 stm32f407_ssc_hal\application.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h

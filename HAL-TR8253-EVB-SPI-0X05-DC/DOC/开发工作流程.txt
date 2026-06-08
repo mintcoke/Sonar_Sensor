@@ -1,0 +1,122 @@
+EtherCAT 从站 + 声纳 — 完整开发工作流程
+
+═══════════════════════════════════════════════════════════
+一、角色分工
+═══════════════════════════════════════════════════════════
+
+  固件工程师:
+    - 写 Application.c 业务逻辑
+    - 在 ecat_api.h 加 PDO 变量命名
+    - 用 SSC Tool 改 XLSX → 重新生成 SSC-DeviceObjects.h
+    - Keil 编译烧录、Debug 调试
+
+  PLC/测试工程师:
+    - 导入 ESI 文件 (TRI_SPI_DC.xml)
+    - 在 KV-Studio 里映射 PDO → 软元件
+    - 在线监视变量、验证数据
+
+
+═══════════════════════════════════════════════════════════
+二、日常开发流程 (不涉及改 PDO 结构)
+═══════════════════════════════════════════════════════════
+
+1. 打开 Keil 工程
+2. 改 Application.c (加业务逻辑, 用 DI(n)/DO(n))
+3. 如果加了新 PDO 变量, 在 ecat_api.h 里加 #define 命名
+4. 编译、烧录、测试
+5. 不需要动其他任何文件
+
+
+═══════════════════════════════════════════════════════════
+三、改 PDO 大小/结构 (需要 SSC Tool)
+═══════════════════════════════════════════════════════════
+
+触发条件: 需要加新的数据对象、改子索引数量、改 PDO 条目数
+
+1. 打开 SSC Tool
+2. 打开 SSC-Device.xlsx
+3. 在表格里修改对象 (加/删对象, 改子索引数)
+4. SSC Tool → Export → 生成新的 SSC-DeviceObjects.h
+5. SSC Tool → Export → 生成新的 TRI_SPI_DC.xml
+6. 把生成的两个文件复制到工程对应位置
+7. 参考"第十节"修复被覆盖的 SSC-Device.h 和 SSC-Device.c
+8. 更新 ecat_api.h 里的 DI/DO 宏 (如果 PDO 数量变了)
+9. 更新 Application.c 的 PDO 映射函数 (如果结构变了)
+10. Keil 编译、烧录、测试
+11. PLC 侧重新导入新的 ESI XML 文件
+
+
+═══════════════════════════════════════════════════════════
+四、加一个新的传感器/外设
+═══════════════════════════════════════════════════════════
+
+1. 在 Application.c 写驱动初始化函数 (如有需要)
+2. 在 main.c 或 ECAT_Stack_Init 里调初始化
+3. 在 Application.c 的 DO_LED_Ctrl 里读写传感器
+4. 用 DI(n) 发给 PLC, DO(n) 接收 PLC 指令
+5. 在 ecat_api.h 加 #define 命名
+6. 编译、烧录、测试
+
+
+═══════════════════════════════════════════════════════════
+五、PLC 侧配置 (第一次或 PDO 结构变后)
+═══════════════════════════════════════════════════════════
+
+1. 打开 KV-Studio → EtherCAT 配置器
+2. 导入或更新 ESI: 选择 TRI_SPI_DC.xml
+3. 映射 TxPDO → 输入软元件 (如 W100 开始)
+4. 映射 RxPDO → 输出软元件 (如 W0 开始)
+5. 下载到 PLC
+6. 在线监视验证
+
+详细见 DOC/PLC测试工程师使用说明.txt
+
+
+═══════════════════════════════════════════════════════════
+六、调试技巧
+═══════════════════════════════════════════════════════════
+
+  看声纳原始数据:  Keil Watch g_SonarBuf[4]
+  看声纳距离:      Keil Watch g_SonarDist 或 DI(T_DISTANCE)
+  看 EtherCAT 状态: Keil Watch nAlStatus (1=INIT 2=PREOP 4=SAFEOP 8=OP)
+  看 LED 控制:     Keil Watch DO(R_LED)
+  声纳收不到数据:  检查 DMA 是否正常 (Keil Watch hdma_usart6_rx.Instance->CNDTR)
+                 检查 USART6->SR 错误标志
+
+
+═══════════════════════════════════════════════════════════
+七、关键文件速查
+═══════════════════════════════════════════════════════════
+
+  你改的:
+    Application.c      业务逻辑
+    ecat_api.h         PDO 命名 + 参数结构体
+    main.c             初始化顺序 (极少改)
+    Application.h      LED GPIO + 函数声明
+
+  库文件 (不动):
+    ecat_api.c         EtherCAT 栈封装
+    usart.c            声纳 DMA 驱动
+    App_Flash.c        Flash 存储
+    SSC-Device.c       SSC 栈 (升级后需修复两行)
+    SSC-Device.h       SSC 头 (升级后需修复一行)
+
+  SSC Tool 生成 (每次升级覆盖):
+    SSC-DeviceObjects.h  对象字典
+    TRI_SPI_DC.xml       ESI 描述文件
+    SSC-Device.xlsx      源文件 (在 SSC Tool 里打开)
+
+
+═══════════════════════════════════════════════════════════
+八、从零搭建新项目
+═══════════════════════════════════════════════════════════
+
+1. 拿到这套代码
+2. 用 SSC Tool 从 SSC-Device.xlsx 导出 SSC-DeviceObjects.h + TRI_SPI_DC.xml
+3. 修复 SSC-Device.h (加 #include "ecat_api.h")
+4. 修复 SSC-Device.c (改回调调用)
+5. 配好 ecat_api.h 的 PDO 变量命名
+6. 写 Application.c 业务逻辑
+7. 编译、烧录
+8. PLC 侧导入 ESI、映射 PDO
+9. 完成

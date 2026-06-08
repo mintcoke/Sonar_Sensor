@@ -76,6 +76,14 @@ void     ECAT_SetParamDirty(void);
 uint8_t ECAT_IsOpRunning(void);
 uint8_t ECAT_GetAlState(void);
 
+/* SSC 桥接 — 由 ecat_api.c 提供, SSC-Device.c 调用 */
+extern void (*g_pfnPeriodicTask)(void);
+extern void (*g_pfnSafeOutput)(void);
+extern void (*g_pfnTxPdoMapping)(uint16_t* pData);
+extern void (*g_pfnRxPdoMapping)(uint16_t* pData);
+void APPL_CoeTxPdoMapping(uint16_t* pData);
+void APPL_CoeRxPdoMapping(uint16_t* pData);
+
 #ifdef __cplusplus
 }
 #endif

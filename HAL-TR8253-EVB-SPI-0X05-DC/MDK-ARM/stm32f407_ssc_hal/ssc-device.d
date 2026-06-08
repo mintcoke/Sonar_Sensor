@@ -2,7 +2,6 @@ stm32f407_ssc_hal\ssc-device.o: ..\SSC\SSC-Device.c
 stm32f407_ssc_hal\ssc-device.o: ..\SSC\ecat_def.h
 stm32f407_ssc_hal\ssc-device.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
 stm32f407_ssc_hal\ssc-device.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\string.h
-stm32f407_ssc_hal\ssc-device.o: ..\SSC\ecat_pdo_config.h
 stm32f407_ssc_hal\ssc-device.o: ..\SSC\applInterface.h
 stm32f407_ssc_hal\ssc-device.o: ..\SSC\esc.h
 stm32f407_ssc_hal\ssc-device.o: ..\SSC\ecatslv.h
@@ -52,5 +51,5 @@ stm32f407_ssc_hal\ssc-device.o: ..\SSC\ecatappl.h
 stm32f407_ssc_hal\ssc-device.o: ..\SSC\SSC-DeviceObjects.h
 stm32f407_ssc_hal\ssc-device.o: ../Core/Inc/ecat_cb.h
 stm32f407_ssc_hal\ssc-device.o: ..\HARDWARE\Application.h
+stm32f407_ssc_hal\ssc-device.o: ..\ECAT\ecat_api.h
 stm32f407_ssc_hal\ssc-device.o: ..\SYSTEM\sys\sys.h
-stm32f407_ssc_hal\ssc-device.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdio.h

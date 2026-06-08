@@ -59,12 +59,8 @@ void ECAT_Stack_Init(void)
     g_pfnTxPdoMapping = APPL_CoeTxPdoMapping;
     g_pfnRxPdoMapping = APPL_CoeRxPdoMapping;
 
-    while (HW_Init() != 0U) {
+    while (HW_Init() != 0U && retry < 3) {
         retry++;
-        if (retry >= 3) {
-            while (1) {
-            }
-        }
         HAL_Delay(100U);
     }
 

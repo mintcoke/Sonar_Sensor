@@ -34,14 +34,3 @@ stm32f407_ssc_hal\app_flash.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal
 stm32f407_ssc_hal\app_flash.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 stm32f407_ssc_hal\app_flash.o: ..\ECAT\ecat_api.h
 stm32f407_ssc_hal\app_flash.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\string.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\ecat_def.h
-stm32f407_ssc_hal\app_flash.o: D:\Keil_V5\ARM\ARMCC\Bin\..\include\stdlib.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\ecatappl.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\coeappl.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\objdef.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\sdoserv.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\ecatcoe.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\mailbox.h
-stm32f407_ssc_hal\app_flash.o: ../Core/Inc/ecat_cb.h
-stm32f407_ssc_hal\app_flash.o: ..\SSC\SSC-DeviceObjects.h
-stm32f407_ssc_hal\app_flash.o: ..\ECAT\ecat_pdo_types.h
